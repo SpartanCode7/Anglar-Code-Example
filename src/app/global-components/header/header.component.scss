@@ -1,0 +1,119 @@
+.logo_area_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 0;
+      .logo {
+          a {
+              img {
+                max-width: 195px;
+                height: 35px;
+              }
+          }
+      }
+    .logo {
+        width: 15%;
+    }
+    .header_search {
+        width: 60%;
+        form {
+            display: flex;
+            input[type="text"] {
+                background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                border: 1px solid #DBDBDB;
+                border-radius: 6px 0px 0px 6px;
+                opacity: 1;
+                width: 80%;
+                padding-left: 15px;
+                &::before {
+                  content: "/sdfsdf2";
+                  background-color: red;
+                  width: 40px;
+                  height: 40px;
+                  position: relative;
+                  z-index: 9999;
+                }
+            }
+          input[type="submit"] {
+              background: #2761BB 0% 0% no-repeat padding-box;
+              border-radius: 0px 6px 6px 0px;
+              opacity: 1;
+              border: 0;
+              width: 20%;
+              color: #fff;
+              padding: 10px 25px;
+          }
+      }
+    }
+    .logo_area_right {
+        display: flex;
+        align-items: center;
+        width: 19%;
+        justify-content: space-between;
+        a {
+            display: flex;
+            text-decoration: none;
+            .user_account_icon {
+                display: flex;
+                align-items: center;
+                i {
+                    color: #000000;
+                    font-size: 21px;
+                }
+            }
+          .user_account_text {
+            padding-left: 6px;
+              span {
+                  display: block;
+                  &:first-child {
+                      color: var(--unnamed-color-b2b2b2);
+                      text-align: left;
+                      font: normal normal normal 12px/18px Poppins;
+                      letter-spacing: 0px;
+                      color: #B2B2B2;
+                      opacity: 1;
+                  }
+                  &:last-child {
+                      text-align: left;
+                      font: normal normal normal 16px/25px Poppins;
+                      letter-spacing: 0px;
+                      color: #000000;
+                      opacity: 1;
+                  }
+              }
+          }
+        }
+    }
+}
+
+
+// Nav Bar
+
+.navbar {
+    background-color: #143A74;
+    padding: 0;
+    nav {
+        justify-content: space-between;
+        width: 100%;
+        a {
+          span {
+              margin-right: 10px;
+          }
+            color: var(--unnamed-color-ffffff);
+            text-align: left;
+            font: normal normal normal 13px Poppins;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+            text-decoration: none;
+            padding: 20px 5px;
+            &:first-child {
+              padding-left: 0;
+            }
+            &:last-child {
+              padding-right: 0;
+            }
+        }
+    }
+}
