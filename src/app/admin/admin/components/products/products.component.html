@@ -1,0 +1,174 @@
+<div class="admin_products">
+    <div class="container">
+        <form action="">
+            <div class="admin_product_inner">
+                <div class="admin_product_header">
+                    <div class="admin_product_title">
+                        <h3>Add Product</h3>
+                    </div>
+                    <div class="admin_product_pulish">
+                        <a href="#">Move to Trash</a>
+                        <button>Publish</button>
+                    </div>
+                </div>
+                <div class="admin_product_content">
+                    <div class="admin_product_aside">
+                            <div class="input_boxes">
+                                <div class="box">
+                                    <span>Product Name (ENGLISH)</span>
+                                    <input type="text">
+                                </div>
+                                <div class="box">
+                                    <span>Description (ENGLISH)</span>
+                                    <textarea name="" id="" rows="10"></textarea>
+                                </div>
+                                <div class="box">
+                                    <span>Permalink:</span>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="locations">
+                                <h6>Select Location</h6>
+                                <div class="location_inner">
+                                    <div class="box">
+                                        <span>South Korea</span>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="box">
+                                        <span>Uae</span>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="box">
+                                        <span>Russia</span>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="box">
+                                        <span>Singapore</span>
+                                        <input type="checkbox">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_pricing_tabs">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#genral">Genral</a></li>
+                                    <li><a data-toggle="tab" href="#inventory">Inventory</a></li>
+                                    <li><a data-toggle="tab" href="#shipping">Shipping</a></li>
+                                    <li><a data-toggle="tab" href="#attribute">Attribute</a></li>
+                                  </ul>
+                                
+                                  <div class="tab-content">
+                                    <div id="genral" class="tab-pane fade in active">
+                                      <div class="genral_inner">
+                                          <div class="box">
+                                              <span>Price</span>
+                                              <input type="text">
+                                          </div>
+                                          <div class="box">
+                                              <span>Discount</span>
+                                              <input type="text">
+                                          </div>
+                                          <div class="box">
+                                              <span>Tax Status</span>
+                                              <select name="" id="">
+                                                  <option>Abc</option>
+                                                  <option>Abc</option>
+                                                  <option>Abc</option>
+                                                  <option>Abc</option>
+                                                  <option>Abc</option>
+                                              </select>
+                                          </div>
+                                          <div class="box">
+                                              <span>Tax Class</span>
+                                              <input type="text">
+                                          </div>
+                                          <div class="box">
+                                              <span>Currency</span>
+                                              <select name="" id="">
+                                                  <option>Abc</option>
+                                                  <option>Abc</option>
+                                                  <option>Abc</option>
+                                                  <option>Abc</option>
+                                                  <option>Abc</option>
+                                              </select>
+                                          </div>
+                                          <div class="box featured_product_outer">
+                                              <div class="featured_product_inner">
+                                                <span>Featured Product</span>
+                                                <input type="checkbox">
+                                              </div>
+                                          </div>
+                                      </div>
+                                    </div>
+                                    <div id="inventory" class="tab-pane fade">
+                                      <h3>Inventory</h3>
+                                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                    <div id="shipping" class="tab-pane fade">
+                                      <h3>Shipping</h3>
+                                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                                    </div>
+                                    <div id="attribute" class="tab-pane fade">
+                                      <h6>Add Product Variation</h6>
+                                      <div class="attribute_inner">
+                                          <div class="box">
+                                              <select name="" id="">
+                                                  <option value="">abc</option>
+                                                  <option value="">abc</option>
+                                                  <option value="">abc</option>
+                                                  <option value="">abc</option>
+                                              </select>
+                                              <select name="" id="">
+                                                <option value="">abc</option>
+                                                <option value="">abc</option>
+                                                <option value="">abc</option>
+                                                <option value="">abc</option>
+                                              </select>
+                                            <input type="text" placeholder="Price">
+                                            <input type="text" placeholder="Stock">
+                                            <input type="text" placeholder="Discount">
+                                          </div>
+                                          <div class="add_new_variation">
+                                              <a href="#">Add new variation</a>
+                                          </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                    </div>
+
+                    <!-- Admin Product Rightside -->
+
+                    <div class="admin_product_rightside">
+                        <div class="meida">
+                            <input type="file" id="selectedFile" style="display: none;" />
+                            <a href="#">Add from url</a>
+                        </div>
+                        <!-- Product Categories -->
+                        <div class="product_categories">
+                            <h3>Product Categories</h3>
+                            <div class="box">
+                                <div class="parent_category">
+                                    <input type="checkbox"><span>Mobiles, Tablets</span>
+                                    <div class="child_category">
+                                        <input type="checkbox"><span>Computer & Office Supplies</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button>+ Add new category</button>
+                        </div>
+                        <!-- Product Tag -->
+                        <div class="product_tags">
+                            <div class="box">
+                                <input type="text">
+                                <button>Add</button>
+                            </div>
+                            <p>Seprate tags with comma</p>
+                            <span>Sample <b>x</b></span>
+                            <span>Standard <b>x</b></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

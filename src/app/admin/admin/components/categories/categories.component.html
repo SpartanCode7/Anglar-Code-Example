@@ -1,0 +1,27 @@
+<div class="add_categories">
+    <h3>Add Category</h3>
+      <form [formGroup]="cateForm" (ngSubmit)="cateSubmit()">
+        <div class="cate_name box">
+            <span>Category Name(English)</span>
+            <input type="text" formControlName="cateName">
+        </div>
+        <div class="cate_discription box">
+            <span>Discription(English)</span>
+            <textarea formControlName="cateDiscription"></textarea>
+        </div>
+        <div class="cate_slug box">
+            <span>Slug</span>
+            <input type="text" formControlName="cateSlug">
+        </div>
+        <div class="cate_permalink box">
+            <span>Permalink</span>
+            <select formControlName="catePermalink">
+                <option disabled>Select Permalink</option>
+                <option *ngFor="let permalink of permalinks">{{permalink}}</option>
+            </select>
+        </div>
+        <div class="cate_button">
+            <input type="submit" value="Add Category">
+        </div>
+    </form>
+</div>

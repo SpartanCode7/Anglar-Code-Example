@@ -1,0 +1,19 @@
+.logo_area {
+    padding: 20px 0;
+    #logo {
+        img {
+          width: 200px;
+        }
+    }
+}
+
+.nav_outer {
+  background-color: #143A74;
+    .nav {
+       a {
+         text-decoration: none;
+         color: #fff;
+         padding: 10px;
+       }
+    }
+}

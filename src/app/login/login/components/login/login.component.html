@@ -1,0 +1,22 @@
+<app-login-header></app-login-header>
+
+<main class="login_form">
+    <h6 class="login_form_heading">Admin Login</h6>
+    <!-- Login Form -->
+    <div class="login_form_area">
+        <form [formGroup]="loginForm" (ngSubmit)="onUserSubmit()">
+            <span>username*</span>
+            <input formControlName="loginName" type="text" name="user" />
+            <span>password*</span>
+            <input formControlName="userPassword" type="password" name="password" />
+            <div>
+                <p><input formControlName="rememberMe" type="checkbox" name="remember" value="1"><span> Remember me</span></p>
+                <p><a routerLink="./../forget-password">Lost your password?</a></p>
+            </div>
+            <button type="submit" [disabled]="!loginForm.valid">Login</button>
+        </form>
+    </div>
+</main>
+
+
+

@@ -1,0 +1,83 @@
+.banner {
+    padding-top: 20px;
+}
+
+.brands {
+    padding: 20px 0px;
+    .brands_inner {
+      display: flex;
+    }
+}
+
+.top_3_inner {
+    display: flex;
+    gap: 20px;
+    .box {
+        width: 33%;
+    }
+}
+
+.featured {
+    padding: 50px 0 60px 0;
+    .featured_header {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0px;
+        border-bottom: 2px solid #F8F8F8;
+        align-items: center;
+    }
+    .featured_inner {
+        display: flex;
+        gap: 13px;
+        justify-content: space-between;
+        flex-flow: wrap;
+        .box {
+            width: 18%;
+            padding: 10px 0;
+            a {
+                display: block;
+                text-decoration: none;
+                .product_content {
+                    padding-top: 10px;
+                    h6 {
+                        text-align: left;
+                        font: normal normal normal 16px/25px Poppins;
+                        letter-spacing: 0px;
+                        color: #000000;
+                        opacity: 1;
+                        margin: 0;
+                    }
+                    span {
+                        color: var(--unnamed-color-b2b2b2);
+                        text-align: left;
+                        text-decoration: line-through;
+                        font: normal normal normal 12px/18px Poppins;
+                        letter-spacing: 0px;
+                        color: #B2B2B2;
+                        opacity: 1;
+                    }
+                    .price_box {
+                        padding-top: 6px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        span {
+                            text-align: left;
+                            letter-spacing: 0px;
+                            color: #143A74;
+                            opacity: 1;
+                            text-decoration: none;
+                            font-size: 18px;
+                            i {
+                                border: 1px solid #143A74;
+                                padding: 5px;
+                                border-radius: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
