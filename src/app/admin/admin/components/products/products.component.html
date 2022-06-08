@@ -1,6 +1,6 @@
 <div class="admin_products">
     <div class="container">
-        <form action="">
+        <form [formGroup]="productForm" action="" (ngSubmit)="onProdSubmit()">
             <div class="admin_product_inner">
                 <div class="admin_product_header">
                     <div class="admin_product_title">
@@ -8,7 +8,7 @@
                     </div>
                     <div class="admin_product_pulish">
                         <a href="#">Move to Trash</a>
-                        <button>Publish</button>
+                        <button type="submit">Publish</button>
                     </div>
                 </div>
                 <div class="admin_product_content">
@@ -16,15 +16,15 @@
                             <div class="input_boxes">
                                 <div class="box">
                                     <span>Product Name (ENGLISH)</span>
-                                    <input type="text">
+                                    <input type="text" formControlName="productName">
                                 </div>
                                 <div class="box">
                                     <span>Description (ENGLISH)</span>
-                                    <textarea name="" id="" rows="10"></textarea>
+                                    <textarea name="" id="" rows="10" formControlName="productDiscription"></textarea>
                                 </div>
                                 <div class="box">
                                     <span>Permalink:</span>
-                                    <input type="text">
+                                    <input type="text" formControlName="productPermalink">
                                 </div>
                             </div>
                             <div class="locations">
@@ -32,19 +32,19 @@
                                 <div class="location_inner">
                                     <div class="box">
                                         <span>South Korea</span>
-                                        <input type="checkbox">
+                                        <input type="checkbox" formControlName="locKorea">
                                     </div>
                                     <div class="box">
                                         <span>Uae</span>
-                                        <input type="checkbox">
+                                        <input type="checkbox" formControlName="locUae">
                                     </div>
                                     <div class="box">
                                         <span>Russia</span>
-                                        <input type="checkbox">
+                                        <input type="checkbox" formControlName="locRussia">
                                     </div>
                                     <div class="box">
                                         <span>Singapore</span>
-                                        <input type="checkbox">
+                                        <input type="checkbox" formControlName="locSingapore">
                                     </div>
                                 </div>
                             </div>
@@ -61,20 +61,17 @@
                                       <div class="genral_inner">
                                           <div class="box">
                                               <span>Price</span>
-                                              <input type="text">
+                                              <input type="text" formControlName="productPrice">
                                           </div>
                                           <div class="box">
                                               <span>Discount</span>
-                                              <input type="text">
+                                              <input type="text" formControlName="productDiscount">
                                           </div>
                                           <div class="box">
                                               <span>Tax Status</span>
-                                              <select name="" id="">
-                                                  <option>Abc</option>
-                                                  <option>Abc</option>
-                                                  <option>Abc</option>
-                                                  <option>Abc</option>
-                                                  <option>Abc</option>
+                                              <select name="" id="" formControlName="productStatus">
+                                                <option disabled>Select Permalink</option>
+                                                <option *ngFor="let tax of taxStatus">{{tax}}</option>
                                               </select>
                                           </div>
                                           <div class="box">
@@ -83,18 +80,15 @@
                                           </div>
                                           <div class="box">
                                               <span>Currency</span>
-                                              <select name="" id="">
-                                                  <option>Abc</option>
-                                                  <option>Abc</option>
-                                                  <option>Abc</option>
-                                                  <option>Abc</option>
-                                                  <option>Abc</option>
+                                              <select name="" id="" formControlName="productCurrency">
+                                                <option disabled>Select Permalink</option>
+                                                <option *ngFor="let currency of currencies">{{currency}}</option>
                                               </select>
                                           </div>
                                           <div class="box featured_product_outer">
                                               <div class="featured_product_inner">
                                                 <span>Featured Product</span>
-                                                <input type="checkbox">
+                                                <input type="checkbox" formControlName="productFeature">
                                               </div>
                                           </div>
                                       </div>
@@ -123,9 +117,9 @@
                                                 <option value="">abc</option>
                                                 <option value="">abc</option>
                                               </select>
-                                            <input type="text" placeholder="Price">
-                                            <input type="text" placeholder="Stock">
-                                            <input type="text" placeholder="Discount">
+                                            <input type="text" placeholder="Price" formControlName="productName">
+                                            <input type="text" placeholder="Stock" formControlName="productName">
+                                            <input type="text" placeholder="Discount" formControlName="productName">
                                           </div>
                                           <div class="add_new_variation">
                                               <a href="#">Add new variation</a>
@@ -140,7 +134,7 @@
 
                     <div class="admin_product_rightside">
                         <div class="meida">
-                            <input type="file" id="selectedFile" style="display: none;" />
+                            <!-- <input type="file" id="selectedFile" style="display: none;" /> -->
                             <a href="#">Add from url</a>
                         </div>
                         <!-- Product Categories -->
@@ -159,7 +153,7 @@
                         <!-- Product Tag -->
                         <div class="product_tags">
                             <div class="box">
-                                <input type="text">
+                                <input type="text" formControlName="productName">
                                 <button>Add</button>
                             </div>
                             <p>Seprate tags with comma</p>

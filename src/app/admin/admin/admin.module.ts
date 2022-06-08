@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 
-
 import { AdminRoutingModule } from './admin-routing.module';
 import { AdminHeaderComponent } from './components/admin-header/admin-header.component';
 import { AdminFooterComponent } from './components/admin-footer/admin-footer.component';
@@ -13,7 +12,6 @@ import { CategoriesComponent } from './components/categories/categories.componen
 import { CustomersComponent } from './components/customers/customers.component';
 import { AdminhomeComponent } from './components/adminhome/adminhome.component';
 import { AdminComponent } from './admin/admin.component';
-
 
 @NgModule({
   declarations: [

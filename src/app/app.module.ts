@@ -32,9 +32,6 @@ import { AsusComponent } from './brands/asus/asus.component';
 import { SamsungComponent } from './brands/samsung/samsung.component';
 import { SonyComponent } from './brands/sony/sony.component';
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -75,4 +72,5 @@ import { SonyComponent } from './brands/sony/sony.component';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { } 
+ 
